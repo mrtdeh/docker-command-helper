@@ -1,0 +1,18 @@
+
+# alias dkrps='docker ps -a --format "table \n{{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}\n"'
+alias dkrps='docker ps -a'
+
+alias dkrrmall='docker rm -f $(docker ps -aq)'
+alias dkrrmexited='docker rm $(docker ps -q -f status=exited)'
+
+alias dkrstartall='docker start $(docker ps -a -f status=exited --format "{{.Names}}")'
+
+alias dkrimgs='docker images'
+
+alias dkrstats='docker stats $(docker ps -a --format "{{.Names}}")'
+
+alias dkrup='docker-compose up'
+alias dkrupd='docker-compose up -d'
+alias dkrdown='docker-compose down'
+
+
