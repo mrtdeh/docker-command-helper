@@ -159,7 +159,7 @@ docker-compose down
  
  ## Contributing
  
- Contributions are always welcome, no matter how large or small.
+ Contributions are always welcome, no matter how large or small
  
  
  
